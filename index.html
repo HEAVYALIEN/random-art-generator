@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Art Generator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>Art Generator</h1>
+    <div class="container">
+        <div class="slider">
+            <label for="numShapes">Number of Shapes:</label>
+            <input type="range" id="numShapes" min="1" max="100" value="10" />
+            <span id="numShapesValue">10</span>
+        </div>
+
+        <div>
+            <label for="colorPalette">Color Palette:</label>
+            <input type="range" id="colorPalette" min="0" max="2" value="0">
+            <span id="colorPaletteValue">0</span>
+        </div>
+
+        <div>
+            <label for="shapeSize">Shape Size:</label>
+            <input type="range" id="shapeSize" min="10" max="100" value="50" />
+            <span id="shapeSizeValue">50</span>
+        </div>
+
+        <div>
+            <label for="canvasSize">Canvas Size:</label>
+            <input type="range" id="canvasSize" min="600" max="6000" value="600" />
+            <span id="canvasSizeValue">600</span>
+        </div>
+        <div class="buttons">
+            <button id="generateButton">Generate</button>
+            <button id="saveButton">Save</button>
+        </div>
+    </div>
+    <canvas id="myCanvas" width="600" height="600"></canvas>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
